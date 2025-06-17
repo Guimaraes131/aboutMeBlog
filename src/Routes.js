@@ -4,6 +4,7 @@ import AboutMe from "./pages/AboutMe"
 import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import DefaultPage from "components/DefaultPage";
+import Post from "pages/Post";
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
         <Route path="/" element={<DefaultPage/>}>
           <Route path="home" element={<Home />}/>
           <Route path="aboutme" element={<AboutMe/>}/>
+          <Route path="posts/:id" element={<Post/>}/>
         </Route>
 
         <Route path="*" element={<h1>Not Found</h1>}/>
