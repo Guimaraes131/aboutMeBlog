@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <h1>AboutMe</h1>
+    <h1>About me</h1>
   )
 }
 
