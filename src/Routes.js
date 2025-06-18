@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import DefaultPage from "components/DefaultPage";
 import Post from "pages/Post";
+import NotFound from "pages/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -18,7 +19,7 @@ const AppRoutes = () => {
           <Route path="posts/:id" element={<Post/>}/>
         </Route>
 
-        <Route path="*" element={<h1>Not Found</h1>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
 
       <Footer/>
